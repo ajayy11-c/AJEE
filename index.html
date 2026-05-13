@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AJEE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+
+<h1>AJEE</h1>
+
+<div class="card">
+  <h2>Today's Progress</h2>
+  <p>Study Hours: 4</p>
+</div>
+
+<input type="text" id="taskInput" placeholder="Enter task">
+
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+<div class="card">
+
+  <h2>Study Timer</h2>
+
+  <h1 id="timer">25:00</h1>
+
+  <button onclick="startTimer()">Start</button>
+
+  <button onclick="resetTimer()">Reset</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
